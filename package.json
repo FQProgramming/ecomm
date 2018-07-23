@@ -1,7 +1,7 @@
 {
-  "name": "webseite-demo",
+  "name": "ecomm",
   "version": "1.0.0",
-  "description": "Demo",
+  "description": "Ecommerce frontend",
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.3.1",
