@@ -1,5 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Jura:400,500|Lobster')
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css')
+h1, h2, h3, h4, strong
+  font-family: 'Lobster', cursive !important
+
+h5, h6
+  font-family: 'Jura', sans-serif !important
+  font-weight: 500
+
+p, a
+
+  font-family: 'Jura', sans-serif !important
+  font-weight: 400
+
 .view, body, html
   height: 100%
+  overflow-x: hidden
+
+p .footer
+  text-align: left
+  padding-left: 15px
+  color: lightblue
+
+
+
+li, .footer
+  text-align: left
+  padding-left: 15px
+  text-transform: uppercase
+  color: lightblue
+  list-style: none
 
 .view
   background-image: url('../images/hero.jpg'); background-repeat: no-repeat; background-size: cover
@@ -10,7 +39,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/hero.jpg')
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpg')
 .navbar
-  background-color: rgba(0, 0, 0, 0.2)
+  background-color: rgba(0, 0, 0, 0.6)
 
 .page-footer, .top-nav-collapse
   background-color: #000
@@ -23,3 +52,64 @@
 @media (min-width: 800px) and (max-width: 850px)
   .navbar:not(.top-nav-collapse)
     background: #000 !important
+
+
+
+.foot
+  background-image: url('../images/foot.jpg')
+  background-size: 50%
+  font-weight: 400
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+//  background: linear-gradient(to bottom, orange, #ff69b4)
+  background: -moz-linear-gradient(top, orange, #ff69b4)
+  background: -o-linear-gradient(top, orange, #ff69b4)
+  background: -ms-linear-gradient(top, orange, #ff69b4)
+  background: -webkit-gradient(linear, left top, left bottom, orange, #ff69b4)
+  background: -webkit-linear-gradient(top, orange, #ff69b4)
+
+  font-weight: 400 //
+
+
+
+
+.navbar
+  .mega-dropdown
+    position: static !important
+  .dropdown-menu.mega-menu
+    width: 100%
+    border: none
+    border-radius: 0
+    &.v-2
+      a
+        padding: 0
+        &.news-title-2
+          font-weight: 500
+          font-size: 1.1rem
+          line-height: 1.5
+          -webkit-transition: .2s
+          transition: .2s
+          color: #fff !important
+          &:hover
+            color: #d0d6e2 !important
+      .sub-menu
+        ul
+          list-style: none
+          &.caret-style li
+            -webkit-transition: .3s
+            transition: .3s
+            &:hover
+              background-color: rgba(0, 0, 0, 0.2)
+              -webkit-transition: .3s
+
+            
+        a.menu-item
+          color: #fff !important
+          &:hover
+            color: #fff !important
+      .sub-title
+        padding-bottom: 1rem
+        margin-bottom: 1rem
+        border-bottom: 1px solid
+      .font-small
+        font-size: 0.85rem
